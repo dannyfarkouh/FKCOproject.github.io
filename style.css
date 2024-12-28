@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+/* var */
+:root {
+    --myBeige: rgba(255, 228, 196, 0.329); 
+}
+
 /* GENERAL */
+
+u {
+    color: #c0392b;
+}
+
+.about {
+    cursor: default;
+}
 
 * {
     box-sizing: border-box;
@@ -9,7 +22,7 @@
 }
 
 body {
-    background-color: blanchedalmond;
+    background-color: var(--myBeige);
     font-family: 'Open Sans', sans-serif; 
     color: #222; 
     padding-bottom: 50px; ;
@@ -68,10 +81,41 @@ body {
     color: black; 
 }
 
+.nav.active a:hover {
+    color: #c0392b; 
+    font-weight: bold;
+}
+
 .nav.active .container {
     padding: 10px 0;
 }
 
+.nav.active .dropdown .dropdownA {
+    color: white; 
+}
+.nav.active .dropdown .dropdownA:hover {
+    color: #c0392b; 
+    font-weight: bold;
+}
+
+
+/* dropdown menu "about section" */
+
+.dropdown .content {
+    display: none;
+    position: absolute; 
+    background-color: black;
+    max-width: 150px;
+    min-height: 60px;
+    padding-top: 6px;
+    margin: 5px -27px; 
+}
+
+.dropdown:hover .content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 
 /* hero */
@@ -86,3 +130,4 @@ body {
     position: relative;
     z-index: -1; 
 }
+
