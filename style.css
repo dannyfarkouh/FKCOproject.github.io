@@ -4,12 +4,14 @@
 :root {
     --myBeige: rgba(255, 228, 196, 0.329); 
     --myBlack: #222; 
+    --myRed: #c0392b; 
+    --myWhite: aliceblue; 
 }
 
 /* GENERAL */
 
 u {
-    color: #c0392b;
+    color: var(--myRed);
 }
 
 * {
@@ -21,7 +23,7 @@ u {
 body {
     background-color: var(--myBeige);
     font-family: 'Open Sans', sans-serif; 
-    color: #222; 
+    color: var(--myBlack); 
     padding-bottom: 50px; ;
 }
 
@@ -34,17 +36,18 @@ body {
 /* about button modifications */
 
 .about {
+    pointer-events: none;
     cursor: default;
-    margin: 0; 
+    margin-right: 50px; ; 
     padding: 0;
 }
 .nav .about:hover {
-    color: aliceblue; 
+    color: var(--myWhite); 
     font-weight: normal;
 }
 
 .nav.active .about:hover {
-    color: black; 
+    color: var(--myBlack); 
     font-weight: normal;
 }
 
@@ -86,28 +89,29 @@ body {
 }
 
 .nav a {
-    color: aliceblue; 
+    color: var(--myWhite); 
     text-decoration: none;
     padding: 7px 15px;
     transition: all 0.3s ease-in-out;
 }
 
 .nav a:hover {
-    color: #c0392b; 
+    color: var(--myRed); 
     font-weight: bold;
 }
 
 .nav.active {
-    background-color:aliceblue;
+    background-color:var(--myWhite);
     box-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
 .nav.active a {
-    color: black; 
+    color: var(--myBlack); 
+    transition: all 0.3s ease-in-out;
 }
 
 .nav.active a:hover {
-    color: #c0392b; 
+    color: var(--myRed); 
     font-weight: bold;
 }
 
@@ -116,10 +120,10 @@ body {
 }
 
 .nav.active .dropdown .dropdownA {
-    color: aliceblue; 
+    color: var(--myWhite); 
 }
 .nav.active .dropdown .dropdownA:hover {
-    color: #c0392b; 
+    color: var(--myRed); 
     font-weight: bold;
 }
 
@@ -127,23 +131,27 @@ body {
 /* dropdown menu "about section" */
 
 .dropdown .content {
-    display: none;
-    position: absolute; 
-    background-color: #222;
-    border: 1px solid var(--myBeige);
-    border-radius: 5px;
-    max-width: 150px;
-    min-height: 60px;
-    padding-top: 6px;
-    margin: 5px -27px; 
-    transition: all 0.3s ease-in-out;
-}
-
-.dropdown:hover .content{
+    opacity: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
-    transition: all 0.3s ease-in-out;
+    position: absolute; 
+    background-color: var(--myBlack);
+    border: 1px solid var(--myBeige);
+    border-radius: 5px;
+    max-width: 150px;
+    min-width: 150px;
+    min-height: 60px;
+    padding-top: 6px;
+    margin: 5px -27px; 
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.dropdown .content:hover{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 1;
 }
 
 
