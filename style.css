@@ -3,16 +3,13 @@
 /* var */
 :root {
     --myBeige: rgba(255, 228, 196, 0.329); 
+    --myBlack: #222; 
 }
 
 /* GENERAL */
 
 u {
     color: #c0392b;
-}
-
-.about {
-    cursor: default;
 }
 
 * {
@@ -34,11 +31,39 @@ body {
 }
 
 
+/* about button modifications */
+
+.about {
+    cursor: default;
+    margin: 0; 
+    padding: 0;
+}
+.nav .about:hover {
+    color: aliceblue; 
+    font-weight: normal;
+}
+
+.nav.active .about:hover {
+    color: black; 
+    font-weight: normal;
+}
+
+/* contact button modifications */
+#contact:hover {
+    font-size: large;
+}
+
+/* fkco logo modifications */
+
+.logo {
+    font-size: xx-large;
+}
+
 /* NAVBAR */
 
 .nav {
     position: fixed;
-    background-color: #222;
+    background-color: var(--myBlack);
     top: 0; 
     left: 0; 
     right: 0; 
@@ -91,7 +116,7 @@ body {
 }
 
 .nav.active .dropdown .dropdownA {
-    color: white; 
+    color: aliceblue; 
 }
 .nav.active .dropdown .dropdownA:hover {
     color: #c0392b; 
@@ -104,17 +129,21 @@ body {
 .dropdown .content {
     display: none;
     position: absolute; 
-    background-color: black;
+    background-color: #222;
+    border: 1px solid var(--myBeige);
+    border-radius: 5px;
     max-width: 150px;
     min-height: 60px;
     padding-top: 6px;
     margin: 5px -27px; 
+    transition: all 0.3s ease-in-out;
 }
 
 .dropdown:hover .content{
     display: flex;
     flex-direction: column;
     text-align: center;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -122,7 +151,7 @@ body {
 
 .hero {
     height: 100vh; 
-    color: black; 
+    color: var(--myBlack); 
     display: flex; 
     justify-content: center;
     align-items: center;
