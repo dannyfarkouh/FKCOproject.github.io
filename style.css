@@ -142,9 +142,10 @@ body {
     max-width: 150px;
     min-width: 150px;
     min-height: 60px;
-    padding-top: 6px;
+    padding-top: 0px;
     margin: 5px -27px; 
     transition: all 0.2s ease-in-out;
+    overflow: visible;
 }
 
 .nav-content.show{
@@ -184,6 +185,7 @@ body {
 /* hero */
 
 .hero {
+    position: absolute; 
     height: 100vh; 
     color: var(--myBlack); 
     display: flex; 
@@ -194,3 +196,40 @@ body {
     z-index: -1; 
 }
 
+.gradient-background {
+    background: linear-gradient(300deg, var(--myBeige), var(--myRed));
+    background-size: 150% 150%;
+    animation: gradient-animation 20s ease infinite;
+  }
+  
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.hero .container { 
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+}
+
+.japanese-writing {
+    margin-top: 60px;
+    height: 500px;
+}
+
+.welcome-message {
+    margin-left: 30px;
+    margin-top: 20px;
+    max-width: 600px; ;
+}
