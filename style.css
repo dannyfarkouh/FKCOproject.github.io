@@ -265,7 +265,7 @@ body {
     margin-top: 60px;
     padding: 5px;
     border: 1px solid aliceblue; 
-    height: 55vh; 
+    height: 50vh; 
 }
 
 .content {
@@ -306,11 +306,12 @@ span {
     align-items: center;
     text-align: center;
     background-color: #3b5998;
-    padding: 10px 15px;
+    padding: 13px 15px;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s ease-in-out; 
+    border: none;
 }
 
 .icon:hover {
