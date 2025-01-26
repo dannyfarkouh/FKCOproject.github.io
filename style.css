@@ -101,7 +101,7 @@ body {
 }
 
 .nav.active {
-    background-color:var(--myBeige);
+    background-color: var(--myBeige);
     opacity: 1;
     box-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
@@ -200,8 +200,8 @@ body {
 
 .gradient-background {
     background: linear-gradient(300deg, var(--myBeige), var(--myRed));
-    background-size: 150% 150%;
-    animation: gradient-animation 14s ease infinite;
+    background-size: 140% 140%;
+    animation: gradient-animation 11s ease infinite;
     
   }
   
@@ -360,3 +360,4 @@ footer {
     align-items: center;
     text-align: center;
 }
+
