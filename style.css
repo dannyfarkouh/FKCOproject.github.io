@@ -310,7 +310,7 @@ footer {
     text-align: center;
 }
 
-/* CONTENT CONTAINER */
+/* GENERAL CONTENT CONTAINER */
 .content {
     display: flex;
     flex-direction: row;
@@ -324,6 +324,8 @@ footer {
     margin: 50px;
     font-size: large;
 }
+
+
 #wko-logo {
     height: 23vh;
     margin: 20px;
