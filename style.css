@@ -23,7 +23,8 @@ body {
     background: linear-gradient(0deg, var(--myRed) -35%, var(--myBeige) 13%);
     font-family: 'Open Sans', sans-serif; 
     color: var(--myBlack); 
-    padding-bottom: 50px; ;
+    padding-bottom: 50px;
+    overflow-x: hidden;
 }
 .container {
     max-width: 1200px;
@@ -74,16 +75,13 @@ body {
     font-weight: bold;
 }
 .nav.active {
-    background-color: var(--myBeige);
     opacity: 1;
     box-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 .nav.active a {
-    color: var(--myBlack); 
     transition: all 0.3s ease-in-out;
 }
 .nav.active a:hover {
-    color: var(--myRed); 
     font-weight: bold;
 }
 .nav.active .container {
@@ -108,14 +106,9 @@ body {
 }
 
 .nav.active .about:hover {
-    color: var(--myBlack); 
     font-weight: normal;
 }
 
-/* contact button modifications */
-#contact:hover {
-    font-size: large;
-}
 /* dropdown menu "about section" */
 .nav-content {
     opacity: 0; 
@@ -143,10 +136,6 @@ body {
 .nav .rotate, 
 .nav .rotate.down {
     filter: invert(1);
-}
-.nav.active .rotate, 
-.nav.active .rotate.down {
-    filter: invert(0);
 }
 .rotate{
     -moz-transition: all 0.2s linear;
@@ -212,7 +201,7 @@ body {
     align-items:normal;
     justify-content: center;
     margin-left: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     max-width: 600px;
     height: 250px;
     padding: 20px; 
@@ -314,10 +303,13 @@ footer {
 .content {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: justify;
-    height: 50vh; 
+    height: 45vh; 
+}
+.content:nth-child(2n) {
+    background: linear-gradient(to right, var(--myBeige), var(--myRed));
 }
 .paragraph-content {
     width: 35vw;
