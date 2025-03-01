@@ -2,7 +2,7 @@
 
 /* var */
 :root {
-    --myBeige: #f5e3cf; 
+    --myBeige: #f8e7d6; 
     --myBlack: #292929; 
     --myRed: #c0392b; 
     --myWhite: aliceblue; 
@@ -28,10 +28,16 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
 }
 /* fkco logo modifications */
 .logo {
     font-size: xx-large;
+    margin-left: 20px;
 }
 
 
@@ -213,6 +219,9 @@ body {
     color: var(--myBlack); 
     z-index: -1; 
     position: relative; 
+    border: var(--myBlack) 1px solid;
+    border-bottom: 0;
+    border-right: 0;
 }
 .welcome-message::before {
     content: ""; 
@@ -228,25 +237,7 @@ body {
     opacity: 0.2; 
     z-index: -1; 
 }
-.content {
-    margin-top: 60px;
-    padding: 5px;
-    border: 1px solid aliceblue; 
-    height: 50vh; 
-}
-.content {
-    display: flex; 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    text-align: justify;
-}
-.content .member-wko {
-    max-width: 400px;
-    font-size: large;
-    margin: 20px;
-}
+
 .shin-writing img {
     height: 400px;
     margin: 20px;
@@ -307,14 +298,33 @@ a {
 
 /* FOOTER */
 footer {
-    margin: 0;
-    padding: 0;
-    margin-top: 30px;
-    margin-bottom: -30px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px; 
+    margin-bottom: -40px; ;
     color: var(--myBlack);
     font-size: smaller;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+/* CONTENT CONTAINER */
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    height: 50vh; 
+}
+.paragraph-content {
+    width: 35vw;
+    margin: 50px;
+    font-size: large;
+}
+#wko-logo {
+    height: 23vh;
+    margin: 20px;
 }
