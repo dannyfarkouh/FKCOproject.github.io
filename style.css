@@ -50,6 +50,7 @@ body {
     left: 0; 
     right: 0; 
     transition: all 0.3s ease-in-out;
+    z-index: 1000;
 }
 .nav .container {
     display: flex;
@@ -293,10 +294,15 @@ footer {
     margin-bottom: -40px; ;
     color: var(--myBlack);
     font-size: smaller;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+#wko-logo {
+    height: 23vh;
+    margin: 20px;
 }
 
 /* GENERAL CONTENT CONTAINER */
@@ -308,8 +314,19 @@ footer {
     text-align: justify;
     height: 45vh; 
 }
-.content:nth-child(2n) {
+.content:nth-child(4) {
     background: linear-gradient(to right, var(--myBeige), var(--myRed));
+    height: 50vh;
+}
+.content:nth-child(6){
+    margin-top: -25px; ;
+}
+.triangle {
+    background-color: var(--myBeige);
+    height: 10vh;
+    margin-top: -5vh;
+    z-index: +1;
+    rotate: 2deg;
 }
 .paragraph-content {
     width: 35vw;
@@ -317,8 +334,9 @@ footer {
     font-size: large;
 }
 
-
-#wko-logo {
-    height: 23vh;
-    margin: 20px;
+.content:nth-child(6) .paragraph-content{
+    padding: 40px;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
 }
