@@ -368,7 +368,7 @@ footer {
     align-content: left;
 }
 .join-us .text-box {
-    width: 50vw;
+    width: 55vw;
     margin: 0;
     padding: 0;
     border: none;
@@ -377,6 +377,7 @@ footer {
     align-items: left;
     text-align: justify;
     color: var(--myWhite);
+    font-size: 1.2em;
 }
 .join-us .text-box h2 {
     margin-bottom: 10px;  
