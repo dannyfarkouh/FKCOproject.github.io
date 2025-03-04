@@ -294,7 +294,7 @@ a {
 footer {
     margin: 0px;
     padding: 0px;
-    margin-top: 0;
+    margin-top: -30px;
     margin-bottom: -40px;
     color: var(--myBlack);
     font-size: smaller;
@@ -338,6 +338,7 @@ footer {
     border: 1px solid black;
     border-top: none;
     border-left: none;
+    padding: 0px;
 }
 
 #globe-png {
@@ -355,7 +356,9 @@ footer {
 
 /* JOIN US  */
 .content:nth-child(7){
-    height: 55vh;
+    height: 65vh;
+    min-height: 400px;
+    margin-top: 20px;
 }
 
 .join-us {
@@ -372,7 +375,7 @@ footer {
     justify-content: center;
     min-height: 360px;
     margin-bottom: 60px;
-
+    min-height: 380px;
 }
 .join-us .text-box {
     width: 45vw;
@@ -408,6 +411,7 @@ button{
     font-size: 1em;
     height: 10vh;
     width: 15vw;
+    min-height: 54px;
     transition: 0.5s all;
 }
 
@@ -432,9 +436,6 @@ button{
 
 /* Scale website for larger screens */
 @media screen and (min-width: 1800px) {
-    .container {
-        font-size: larger;
-    }
     .welcome-message {
         font-size: larger;
     }
@@ -447,5 +448,17 @@ button{
     .btn-dojos {
         height: 8vh;
         width: 10vw;
+    }
+}
+/* Scale website for smaller screens (ipad or small computer) */
+@media screen and (max-width: 1400px) {
+    .container {
+        font-size: medium;
+    }
+    .paragraph-content {
+        font-size: 1em;
+    }
+    .content:nth-child(7){
+        margin-top: 80px;
     }
 }
