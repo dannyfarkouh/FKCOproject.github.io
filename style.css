@@ -300,10 +300,6 @@ footer {
     align-items: center;
     text-align: center;
 }
-#wko-logo {
-    height: 23vh;
-    margin: 20px;
-}
 
 /* GENERAL CONTENT CONTAINER */
 .content {
@@ -334,14 +330,33 @@ footer {
     font-size: large;
 }
 
-.content:nth-child(6) .paragraph-content{
-    padding: 40px;
+.text-box {
+    margin-left: 30px;
+    padding: 20px;
     border: 1px solid black;
     border-top: none;
     border-left: none;
 }
 
+.list-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    font-weight: bolder;
+}
+
+#globe-png {
+    height: 35vh;
+}
 #kenji-midori {
     height: 30vh;
     border-radius: 5px;
 }
+#wko-logo {
+    height: 23vh;
+    margin: 20px;
+}
+
+/* JOIN US  */
