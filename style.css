@@ -2,7 +2,7 @@
 
 /* var */
 :root {
-    --myBeige: #f7ebde; 
+    --myBeige: #f3e0cd; 
     --myBlack: #292929;
     --myBlack2: #333333dc;
     --myRed: #c44739; 
@@ -316,12 +316,9 @@ footer {
     text-align: justify;
     height: 45vh; 
     min-height: 300px;}
-.content:nth-child(4) {
+.cont2 {
     background: linear-gradient(to right, var(--myBeige), var(--myRed));
     height: 50vh;
-}
-.content:nth-child(6){
-    margin-top: -25px; ;
 }
 .triangle {
     background-color: var(--myBeige);
@@ -356,7 +353,7 @@ footer {
 }
 
 /* JOIN US  */
-.content:nth-child(7){
+.cont4{
     height: 65vh;
     min-height: 400px;
     margin-top: 20px;
@@ -456,7 +453,7 @@ button{
     .paragraph-content {
         font-size: 1em;
     }
-    .content:nth-child(7){
+    .cont4{
         margin-top: 80px;
     }
 }
