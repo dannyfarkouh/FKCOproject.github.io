@@ -29,7 +29,7 @@ body {
     overflow-x: hidden;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto; 
     display: flex;
     flex-direction: row;
@@ -196,7 +196,7 @@ body {
 }
 .japanese-writing {
     margin-top: 60px;
-    height: 500px;
+    height: 57vh;
 }
 .welcome-message {
     display: flex;
@@ -205,8 +205,9 @@ body {
     justify-content: center;
     margin-left: 30px;
     margin-top: 30px;
-    max-width: 600px;
-    height: 250px;
+    width: 40vw;
+    max-width: 700px;
+    height: 28vh;
     padding: 20px; 
     color: var(--myBlack); 
     z-index: -1; 
@@ -214,7 +215,13 @@ body {
     border: var(--myBlack) 1px solid;
     border-bottom: 0;
     border-right: 0;
+    font-size: 1vw;
 }
+.welcome-message p {
+    font-size: large;
+    margin-top: 10px;
+}
+
 .welcome-message::before {
     content: ""; 
     position: absolute;
@@ -228,11 +235,6 @@ body {
     background-position: center; 
     opacity: 0.2; 
     z-index: -1; 
-}
-
-.shin-writing img {
-    height: 400px;
-    margin: 20px;
 }
 span {
     font-weight: bolder;
@@ -357,18 +359,19 @@ footer {
 
 .join-us {
     background-color: var(--myRed2);
-    width: 65vw;
+    width: 85vw;
     height: 45vh;
     border-radius: 15px;
     border: 1.5px solid var(--myBlack);
     margin-top: 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: left;
     align-content: left;
+    justify-content: center;
 }
 .join-us .text-box {
-    width: 55vw;
+    width: 45vw;
     margin: 0;
     padding: 0;
     border: none;
@@ -377,11 +380,18 @@ footer {
     align-items: left;
     text-align: justify;
     color: var(--myWhite);
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 .join-us .text-box h2 {
-    margin-bottom: 10px;  
-    font-size: 2em;
+    margin-bottom: 20px;  
+    font-size: 3em;
+}
+.join-us img {
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+    height: 17vw;
+    border-radius: 10px;
 }
 
 button{
@@ -404,14 +414,12 @@ button{
     background-size: 100% 200%;
     background-position: 0% 0%;
     margin-right: 10px;
+    padding: 0 10px;
 }
 .btn-dojos:hover{
     background-position: 100% 100%;
-}
-.btn-dojos:hover {
     color: var(--myRed2);
 }
-
 .btn-container {
     display: flex;
     flex-direction: row;
