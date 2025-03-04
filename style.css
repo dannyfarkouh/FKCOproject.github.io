@@ -340,3 +340,8 @@ footer {
     border-top: none;
     border-left: none;
 }
+
+#kenji-midori {
+    height: 30vh;
+    border-radius: 5px;
+}
