@@ -2,7 +2,7 @@
 
 /* var */
 :root {
-    --myBeige: #f8e7d6; 
+    --myBeige: #f7ebde; 
     --myBlack: #292929;
     --myBlack2: #333333dc;
     --myRed: #c44739; 
@@ -292,11 +292,10 @@ a {
 footer {
     margin: 0px;
     padding: 0px;
-    margin-top: 20px; 
+    margin-top: 10px; 
     margin-bottom: -30px; ;
     color: var(--myBlack);
     font-size: smaller;
-    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -352,10 +351,14 @@ footer {
 }
 
 /* JOIN US  */
+.content:nth-child(7){
+    height: 55vh;
+}
+
 .join-us {
     background-color: var(--myRed2);
     width: 65vw;
-    height: 40vh;
+    height: 45vh;
     border-radius: 15px;
     border: 1.5px solid var(--myBlack);
     margin-top: 40px;
@@ -380,14 +383,36 @@ footer {
     font-size: 2em;
 }
 
-.btn-dojos {
-    background-color: var(--myBlack2);
-    color: var(--myWhite);
-    border: none;
+button{
+    background-color: var(--myRed2);
+    border: var(--myBeige) 2px solid;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
-    width: 100px;
-    margin-top: 20px;
+    font-size: 1em;
+    height: 70px;
+    width: 150px;
+    transition: 0.5s all;
+}
+
+.btn-dojos {
+    margin-top: 15px;
+    color: var(--myWhite);
+    background-image: linear-gradient(to top, var(--myWhite) 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: 0% 0%;
+    margin-right: 10px;
+}
+.btn-dojos:hover{
+    background-position: 100% 100%;
+}
+.btn-dojos:hover {
+    color: var(--myRed2);
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
 }
