@@ -294,11 +294,12 @@ a {
 footer {
     margin: 0px;
     padding: 0px;
-    margin-top: 10px; 
-    margin-bottom: -30px; ;
+    margin-top: 0;
+    margin-bottom: -40px;
     color: var(--myBlack);
     font-size: smaller;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -363,12 +364,15 @@ footer {
     height: 45vh;
     border-radius: 15px;
     border: 1.5px solid var(--myBlack);
-    margin-top: 40px;
+    margin-top: 0px;
     display: flex;
     flex-direction: row;
     align-items: left;
     align-content: left;
     justify-content: center;
+    min-height: 360px;
+    margin-bottom: 60px;
+
 }
 .join-us .text-box {
     width: 45vw;
@@ -384,7 +388,7 @@ footer {
 }
 .join-us .text-box h2 {
     margin-bottom: 20px;  
-    font-size: 3em;
+    font-size: 2em;
 }
 .join-us img {
     margin: 0;
@@ -402,8 +406,8 @@ button{
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-    height: 70px;
-    width: 150px;
+    height: 10vh;
+    width: 15vw;
     transition: 0.5s all;
 }
 
@@ -424,4 +428,24 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: left;
+}
+
+/* Scale website for larger screens */
+@media screen and (min-width: 1800px) {
+    .container {
+        font-size: larger;
+    }
+    .welcome-message {
+        font-size: larger;
+    }
+    .paragraph-content {
+        font-size: 1.3em;
+    }
+    .join-us .text-box{
+        font-size: 1.35em;
+    }
+    .btn-dojos {
+        height: 8vh;
+        width: 10vw;
+    }
 }
