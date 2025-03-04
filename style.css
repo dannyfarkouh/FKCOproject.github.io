@@ -4,7 +4,7 @@
 :root {
     --myBeige: #f8e7d6; 
     --myBlack: #292929; 
-    --myRed: #c0392b; 
+    --myRed: #c44739; 
     --myWhite: aliceblue; 
 }
 
@@ -360,3 +360,29 @@ footer {
 }
 
 /* JOIN US  */
+
+.join-us {
+    background-color: var(--myRed);
+    width: 65vw;
+    height: 40vh;
+    border-radius: 15px;
+    border: 1.5px solid var(--myBlack);
+}
+
+.join-us .text-box {
+    width: 45vw;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: justify;
+    color: white;
+}
+
+.join-us .text-box h2 {
+    margin-bottom: 10px;  
+    font-size: 2em;
+}
+
