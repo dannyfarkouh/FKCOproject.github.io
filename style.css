@@ -207,7 +207,7 @@ body {
     margin-top: 30px;
     width: 40vw;
     max-width: 700px;
-    height: 28vh;
+    height: 35vh;
     padding: 20px; 
     color: var(--myBlack); 
     z-index: -1; 
@@ -215,11 +215,13 @@ body {
     border: var(--myBlack) 1px solid;
     border-bottom: 0;
     border-right: 0;
-    font-size: 1vw;
 }
 .welcome-message p {
-    font-size: large;
+    font-size: 1.3vw;
     margin-top: 10px;
+}
+.welcome-message h1 {
+    font-size: 2vw;
 }
 
 .welcome-message::before {
@@ -313,7 +315,7 @@ footer {
     align-items: center;
     text-align: justify;
     height: 45vh; 
-}
+    min-height: 300px;}
 .content:nth-child(4) {
     background: linear-gradient(to right, var(--myBeige), var(--myRed));
     height: 50vh;
@@ -325,7 +327,6 @@ footer {
     background-color: var(--myBeige);
     height: 10vh;
     margin-top: -5vh;
-    z-index: +1;
     rotate: 2deg;
 }
 .paragraph-content {
@@ -436,9 +437,6 @@ button{
 
 /* Scale website for larger screens */
 @media screen and (min-width: 1800px) {
-    .welcome-message {
-        font-size: larger;
-    }
     .paragraph-content {
         font-size: 1.3em;
     }
