@@ -25,7 +25,6 @@ body {
     background: linear-gradient(0deg, var(--myRed) -35%, var(--myBeige) 13%);
     font-family: 'Open Sans', sans-serif; 
     color: var(--myBlack); 
-    padding-bottom: 50px;
     overflow-x: hidden;
 }
 .container {
@@ -294,10 +293,9 @@ a {
 
 /* FOOTER */
 footer {
+    height: 5vh;
     margin: 0px;
     padding: 0px;
-    margin-top: -40px;
-    margin-bottom: -40px;
     color: var(--myBlack);
     font-size: smaller;
     display: flex;
@@ -305,7 +303,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 30px;
+    border-top: 1px solid var(--myBlack);
 }
 
 /* GENERAL CONTENT CONTAINER */
@@ -479,7 +477,7 @@ button{
     animation-timeline: view();  
     animation-range: entry 0% cover 40%;
 }
-.cont4 {
+.cont4, .cont6{
     animation: appear3 linear;
     animation-timeline: view();  
     animation-range: entry 0% cover 40%;
@@ -513,7 +511,7 @@ button{
     height: 50vh;
     width: 50vw; 
     font-size: 1.1vw;
-    gap: 10px;
+    gap: 15px;
     margin-right: 30px;
     margin-top: 50px;
 }
@@ -533,13 +531,53 @@ button{
         typing 1.5s steps(27), 
         cursor .4s step-end infinite alternate;
 }
+/* testemonial typerwriter animation */
+.typerwriter2 {
+    width: max-content;
+}
+.typerwriter2 h1 {
+    overflow: hidden;
+    border-right: .15em solid var(--myBlack);
+    width: 100%;
+    white-space: nowrap;
+    margin: 0 ;
+    letter-spacing: .15em;
+    animation: 
+        typing .8s steps(15), 
+        cursor .4s step-end infinite alternate; 
+}
 /* animations for typewriter */
 @keyframes cursor {
     50% {border-color: transparent;}
 }
 @keyframes typing {
-    from {width: 0;}
+    from {width: 0;
+    }
+    
 }
+
+.cont6 {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items:center;
+    text-align: justify;
+    height: 75vh;
+    border-top: 2px solid var(--myBlack);
+}
+#shihan-ohan2 {
+    height: 35vh;
+    border-radius: 5px;
+    margin-right: 30px;
+
+}
+
+
+
+
+
+
+
 
 /* Scale website for larger screens */
 @media screen and (min-width: 1800px) {
@@ -570,5 +608,8 @@ button{
     }
     .large-paragraph h1 {
         font-size: 1.5em;
+    }
+    .testamonial-paragraph {
+        font-size: 1.1vw;
     }
 }
