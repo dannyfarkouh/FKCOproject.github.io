@@ -303,7 +303,6 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-top: 1px solid var(--myBlack);
 }
 
 /* GENERAL CONTENT CONTAINER */
