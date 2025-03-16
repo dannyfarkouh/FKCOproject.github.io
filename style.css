@@ -571,6 +571,23 @@ button{
 
 }
 
+/* Shihan dojos page */
+
+.schedule-div {
+    width: 100vw;
+    min-width: 1200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.schedule-content {
+    width: 1100px;
+    height: 100vh;
+    background-color: var(--myRed2);
+}
 
 
 
