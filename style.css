@@ -7,6 +7,7 @@
     --myBlack2: #333333dc;
     --myRed: #c44739; 
     --myRed2: #d45b4e;
+    --myRed3: #e78b7f;
     --myWhite: aliceblue; 
 }
 
@@ -574,22 +575,84 @@ button{
 /* Shihan dojos page */
 
 .schedule-div {
+    margin-top: 83px;
     width: 100vw;
-    min-width: 1200px;
+    min-width: 1110px;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.title-text{
+    height: 270px;
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.schedule-content {
+    width: 1000px;
     height: 100vh;
+    background-color: var(--myRed3);
+    border-radius: 5px;
+}
+#shihan-honbu-pic {
+    height: 230px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.schedule-div .title-text .paragraph-content {
+    width: 500px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.schedule-div .title-text .paragraph-content h2 {
+    text-align: left;
+}
+.schedule-div .title-text .paragraph-content p {
+    margin-top: 10px;
+}
+
+#location-buttons {
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+#location-buttons button {
+    width: 450px;
+    height: 80px;
+    color: var(--myWhite);
+}
+
+.schedules-container1 {
+    width: 1000px;
+    height: 40vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: justify;
+    background-color: red;
 }
-.schedule-content {
-    width: 1100px;
-    height: 100vh;
-    background-color: var(--myRed2);
+.schedules-container2 {
+    width: 1000px;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-color: blue;
 }
-
-
 
 
 
