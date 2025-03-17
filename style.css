@@ -2,12 +2,12 @@
 
 /* var */
 :root {
-    --myBeige: #f3e0cd; 
+    --myBeige: #f3e5d6; 
     --myBlack: #292929;
     --myBlack2: #333333dc;
     --myRed: #c44739; 
     --myRed2: #d45b4e;
-    --myRed3: #fa8879;
+    --myRed3: #f59589;
     --myWhite: aliceblue; 
 }
 
@@ -740,14 +740,14 @@ button{
 .other-dojos {
     width: 1000px; 
     height: 200px; 
-    margin-top: 10px;
+    margin-top: 20px;
 
     border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 .dojos {
     width: 250px;
@@ -761,6 +761,12 @@ button{
     gap: 4px;
     background-color: var(--myRed3);
     padding: 10px;
+    transition: all 0.7s ease;
+}
+.dojos:hover {
+    width: 255px;
+    height: 210px;
+    box-shadow: 0 0 15px var(--myRed);
 }
 
 
