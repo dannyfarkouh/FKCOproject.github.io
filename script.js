@@ -49,7 +49,7 @@ const schedule2 = document.getElementById('schedules-container2');
 function switchContent(activeBtn, inactiveBtn, showSchedule, hideSchedule) {
     activeBtn.classList.add("active");
     inactiveBtn.classList.remove("active");
-    showSchedule.style.display = "block";
+    showSchedule.style.display = "flex";
     hideSchedule.style.display = "none";
 }
 
