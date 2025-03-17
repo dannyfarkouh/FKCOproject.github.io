@@ -640,7 +640,6 @@ button{
     justify-content: center;
     align-items: center;
     text-align: justify;
-    background-color: red;
 }
 #schedules-container2 {
     width: 1000px;
@@ -650,7 +649,6 @@ button{
     justify-content: center;
     align-items: center;
     text-align: justify;
-        background-color: red;
     display: none;
 }
 #location-buttons button.active{
@@ -668,7 +666,6 @@ button{
     justify-content: left;
     align-items: center;
     text-align: center;
-    /* background-color: grey; */
 }
 .schedule-text h2 {
     margin-left: 50px;
@@ -682,7 +679,6 @@ button{
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* background-color: purple;  */
 }
 .schedule-box {
     width: 200px;
