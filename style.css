@@ -27,6 +27,7 @@ body {
     font-family: 'Open Sans', sans-serif; 
     color: var(--myBlack); 
     overflow-x: hidden;
+    min-height: 100vh;
 }
 .container {
     max-width: 1800px;
@@ -575,12 +576,14 @@ button{
 /* Shihan dojos page */
 
 .schedule-div {
+    position: relative;
+    min-height: 95vh;
     margin-top: 83px;
     width: 100vw;
     min-width: 1050px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:baseline;
     align-items: center;
     text-align: justify;
 }
