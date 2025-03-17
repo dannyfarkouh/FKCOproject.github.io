@@ -578,7 +578,6 @@ button{
     margin-top: 83px;
     width: 100vw;
     min-width: 1110px;
-    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -633,25 +632,34 @@ button{
     color: var(--myWhite);
 }
 
-.schedules-container1 {
+#schedules-container1 {
     width: 1000px;
-    height: 40vh;
+    height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: justify;
     background-color: red;
+    transition: opacity 1s ease;
 }
-.schedules-container2 {
+#schedules-container2 {
     width: 1000px;
-    height: 40vh;
+    height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: justify;
     background-color: blue;
+    transition: opacity 1s ease;
+    display: none;
+}
+#location-buttons button.active{
+    background-color: var(--myRed3);
+}
+#location-buttons button:hover{
+    background-color: var(--myRed3);
 }
 
 

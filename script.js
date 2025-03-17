@@ -41,3 +41,22 @@ const scale = (num, in_min, in_max, out_min, out_max) => {
 }; 
 
 // shihan dojos content switcher by button click 
+const scheduleBtn1 = document.getElementById('btn1-schedule');
+const scheduleBtn2 = document.getElementById('btn2-schedule');
+const schedule1 = document.getElementById('schedules-container1');
+const schedule2 = document.getElementById('schedules-container2');
+
+function switchContent(activeBtn, inactiveBtn, showSchedule, hideSchedule) {
+    activeBtn.classList.add("active");
+    inactiveBtn.classList.remove("active");
+    showSchedule.style.display = "block";
+    hideSchedule.style.display = "none";
+}
+
+scheduleBtn1.addEventListener("click", function () {
+    switchContent(scheduleBtn1, scheduleBtn2, schedule1, schedule2);
+});
+
+scheduleBtn2.addEventListener("click", function () {
+    switchContent(scheduleBtn2, scheduleBtn1, schedule2, schedule1);
+});
