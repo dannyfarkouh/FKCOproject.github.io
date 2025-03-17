@@ -4,7 +4,7 @@ const about = document.querySelector('.about');
 const navContent = document.querySelector('.nav-content');
 const rotate = document.querySelector('.rotate');
 window.addEventListener('scroll', function navEdit(){
-    if ( window.scrollY > nav.offsetHeight + 150 ){
+    if ( window.scrollY > nav.offsetHeight + 50 ){
         nav.classList.add('active');
     } else {
         nav.classList.remove('active');
