@@ -577,7 +577,7 @@ button{
 .schedule-div {
     margin-top: 83px;
     width: 100vw;
-    min-width: 1110px;
+    min-width: 1050px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -594,7 +594,7 @@ button{
 }
 .schedule-content {
     width: 1000px;
-    height: 100vh;
+    height: 100%;
     background-color: var(--myRed3);
     border-radius: 5px;
 }
@@ -634,7 +634,7 @@ button{
 
 #schedules-container1 {
     width: 1000px;
-    height: 310px;
+    height: 520px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -643,7 +643,7 @@ button{
 }
 #schedules-container2 {
     width: 1000px;
-    height: 310px;
+    height: 520px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -682,7 +682,7 @@ button{
 }
 .schedule-box {
     width: 200px;
-    height: 200px;
+    height: 210px;
     margin: 10px;
     border-radius: 5px;
     border: var(--myBlack) 3px solid;
@@ -693,6 +693,22 @@ button{
     text-align: center;
     gap: 4px;
     background-color: var(--myBeige);
+}
+.schedule-signup {
+    width: 1000px;
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.schedule-signup div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: large;
 }
 
 
