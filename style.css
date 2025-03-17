@@ -7,7 +7,7 @@
     --myBlack2: #333333dc;
     --myRed: #c44739; 
     --myRed2: #d45b4e;
-    --myRed3: #e78b7f;
+    --myRed3: #fa8879;
     --myWhite: aliceblue; 
 }
 
@@ -714,6 +714,54 @@ button{
     font-size: large;
 }
 
+/* other dojos page */
+.other-dojos-container {
+    position: relative;
+    min-height: 95vh;
+    margin-top: 83px;
+    width: 100vw;
+    min-width: 1050px;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items: center;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.other-dojos-text {
+    width: 850px;
+    height: 120px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: justify;
+}
+.other-dojos {
+    width: 1000px; 
+    height: 200px; 
+    margin-top: 10px;
+
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.dojos {
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    background-color: var(--myRed3);
+    padding: 10px;
+}
 
 
 /* Scale website for larger screens */
