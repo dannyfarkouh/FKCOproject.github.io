@@ -785,6 +785,7 @@ button{
 .organization-title {
     height: 130px;
     width: 60vw;
+    max-width: 1300px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -794,6 +795,7 @@ button{
     font-size: larger;
     height: 230px;
     width: 60vw;
+    max-width: 1300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
