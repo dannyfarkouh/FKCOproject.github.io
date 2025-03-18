@@ -774,7 +774,7 @@ button{
     position: relative;
     min-height: 1000px;
     margin-top: 83px;
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -805,7 +805,7 @@ button{
 }
 .organization-certificate {
     width: 70vw;
-    height: 600px;
+    height: 700px;
     display: flex;
     flex-direction: row;
     align-items: center;
