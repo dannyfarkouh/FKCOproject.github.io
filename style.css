@@ -781,7 +781,6 @@ button{
     align-items: center;
     justify-content: baseline;
     background: linear-gradient(to bottom, var(--myBeige), var(--myRed2));
-    
 }
 .organization-title {
     height: 130px;
@@ -805,19 +804,19 @@ button{
 }
 .organization-certificate {
     width: 70vw;
-    height: 700px;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 .organization-certificate img {
-    width: 55vw;
+    height: 78vh;
     border-radius: 5px;
     transition: all 0.7s ease;
 }
 .organization-certificate img:hover {
-    width: 57vw;
+    height: 75vh;
 }
 .organization-title .typerwriter h1 {
     animation: 
@@ -861,5 +860,8 @@ button{
     }
     .organization-title {
         margin-bottom: 20px;
+    }
+    .organization-certificate {
+        margin-top: 30px;
     }
 }
