@@ -829,21 +829,27 @@ button{
 /* contact page */
 
 .form-container {
-    margin-top: 83px;
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     background: linear-gradient(to top, var(--myBeige), var(--myRed2));
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+
+}
+.form-container img {
+    height: 70vh;
+    margin-top: 83px;
 }
 .form-content {
+    margin-top: 83px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.3);
-    width: 300px;
-    height: 440px;
+    box-shadow: 1px 1px 40px rgb(255, 255, 255);
+    width: 350px;
+    height: 500px;
+    
 }
 label {
     display: block;
@@ -854,7 +860,37 @@ input, textarea {
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif; 
+}
+textarea {
+    width: 100%;
+    height: 100px; /* Adjust the height as needed */
+    padding: 8px;
+    border: 1px solid #ccc;
     border-radius: 4px;
+    resize: none; /* Prevent resizing */
+    overflow: auto; /* Enable scrolling when text overflows */
+}
+.form-content button {
+    height: 60px;
+    width: 120px;
+    margin-top: 25px;
+    color: var(--myWhite);
+    background-image: linear-gradient(to top, var(--myWhite) 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: 0% 0%;
+    margin-right: 10px;
+    padding: 0 10px;
+}
+.form-content button:hover {
+    background-position: 100% 100%;
+    color: var(--myRed2);
+}
+input:focus, textarea:focus {
+    border: 2px solid white;
+    outline: none;
+    box-shadow: 0 0 13px rgb(255, 255, 255);
 }
 
 
